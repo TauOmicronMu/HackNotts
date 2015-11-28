@@ -1,6 +1,7 @@
 package com.aranscope;
 
 import com.leapmotion.leap.*;
+import com.leapmotion.leap.Frame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,7 +24,7 @@ public class LeapPanel extends JPanel {
 
             @Override
             public void onFrame(Controller controller) {
-                com.leapmotion.leap.Frame frame = controller.frame();
+                Frame frame = controller.frame();
 
                 System.out.println("Frame id: " + frame.id()
                         + ", timestamp: " + frame.timestamp()

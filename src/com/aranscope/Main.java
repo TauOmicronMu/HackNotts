@@ -1,8 +1,6 @@
 package com.aranscope;
-import com.leapmotion.leap.*;
 
 import javax.swing.*;
-import java.io.IOException;
 
 public class Main {
     static LeapPanel leapPanel;
